@@ -13,18 +13,21 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  transition: all 0.2s;
   border: none;
   outline: none;
   font-family: "Montserrat", sans-serif;
   font-family: "Outfit", sans-serif;
   text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
+
 body {
   background-color: var(--white);
 }
@@ -35,7 +38,7 @@ body.active {
   --light-bg: #222;
 }
 header {
-  background: var(--light-bg);
+  background: var(--white);
   display: flex;
   position: sticky;
   top: 0;
@@ -45,6 +48,7 @@ header {
   position: -webkit-sticky;
   padding: 2rem 9%;
   align-items: center;
+  border-bottom: 1.8px solid rgba(0, 0, 0, 0.1);
 }
 header .logo {
   margin-right: auto;
@@ -53,7 +57,7 @@ header .logo {
 }
 nav a {
   margin-right: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: var(--black);
 }
 nav a:hover {
@@ -136,7 +140,7 @@ section {
   color: var(--black);
 }
 .home .box .content p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--light-color);
   padding: 1rem 0;
   line-height: 2;
