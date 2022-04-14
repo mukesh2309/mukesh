@@ -19,6 +19,8 @@
   font-family: "Outfit", sans-serif;
   text-decoration: none;
   -webkit-transition: all 0.2s linear;
+  user-select: none;
+
   transition: all 0.2s linear;
 }
 html {
